@@ -214,6 +214,37 @@ header {
     transform: rotate(360deg);
 }
 
+/* BOTONES DE VER PROYECTO - Estilo igual a los botones de redes sociales */
+/* Se actualiza para incluir tanto btn-project como btn-main */
+.project-card a.btn-project,
+.project-card a.btn-main {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #121212;
+    background: linear-gradient(135deg, #d4af37, #f5f5f5);
+    padding: 12px 22px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.3s ease, transform 0.2s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.project-card a.btn-project:hover,
+.project-card a.btn-main:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    background: #d4af37;
+}
+
+.project-card a.btn-project:hover i,
+.project-card a.btn-main:hover i {
+    transform: rotate(360deg);
+}
+
 /* FOOTER */
 footer {
     text-align: center;
